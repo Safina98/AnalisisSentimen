@@ -1,0 +1,174 @@
+
+div#loading {
+    width: 100px;
+    height: 50px;
+    display: none;
+    background: url(loadingimage.gif) no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: wait;
+    }
+div#btn{
+  display: none;
+  position: relative;
+}
+#csvfile {
+  display: none;
+}
+#ket{
+ margin: 50px;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ text-align: justify;
+ text-justify: inter-word;
+
+}
+body { font-family: sans-serif; background: rgba(138, 141, 158, 1) }
+.btnupload{
+  margin-top: 100px
+}
+.btnprocess{
+  margin-bottom: 300px
+}
+.bgimg {
+  font-family: 'Droid Serif', serif;
+  background: url('3132.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-card {
+  max-width: 550px;
+  width:100%;
+  height:450px;
+  position: absolute;
+  font-family: 'Droid Serif', serif;
+  color:#000;
+  top: 10%;
+  right: 0;  
+  left: 0;
+  bottom: 10%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 0px;
+  box-shadow: 10px 20px 30px -9px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition:all 0.4s;
+  background: url('3132.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1
+  margin-bottom: 50px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 0px;
+  box-shadow: 10px 20px 30px -9px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition:all 0.4s;
+  background-color: transparent;
+}
+.columnA {
+  float: left;
+  width: 70%;
+}
+.columnB {
+  float: left;
+  width: 30%;
+}
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.blog-card .gradient-overlay {  
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%);
+  width: 550px;
+  height: 500px;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  z-index: 15;
+}
+
+.button {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: rgba(14, 18, 26, 0.65);
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  margin: 0 auto;
+  display: block;
+}
+.downloadtemp{
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+.button:hover {
+    background-color: transparent;
+    border-color: rgba(57, 76, 96, 0.6);
+    transition: all .1s ease-in-out;
+    font-weight: 300;
+    color: rgba(57, 76, 96, 0.6)
+  }
+.btnfont{
+    font-size: 18px;
+    font-weight:300;
+    font-family:sans-serif;
+  }
+h1 {
+  margin: 0;
+  font-size: 2em;
+  color: rgba(14, 18, 26, 0.85);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  }
+  .hasil {
+    margin-bottom: 50px
+  }
+input[type="file"] {
+    display: none;
+}
+
+table.dataframe, .dataframe th, .dataframe td {
+  margin: 0 auto;
+  margin-top: 50px;
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+table.dataframe{
+  width: 90%
+}
+tr:nth-child(odd)   { background-color:rgba(180, 181, 192, 0.7); }
+tr:nth-child(even)  { background-color:rgba(216, 217, 223, 0.7); }
+
+.downloadlink{
+  text-align: right;
+}
+
+tr:hover            { background-color: rgba(255, 255, 255, 1);}

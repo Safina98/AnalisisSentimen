@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <title>Analisis Sentimen</title>
+    <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="data:,">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">// <![CDATA[
+        function loading(){
+            $("#loading").show();
+            $("#content").hide();       
+        }
+         $(document).ready(function(){ 
+            $('input[type="file"]').change(function(){ 
+              $("#btn").show();
+              $("#file-name").text(this.files[0].name);
+            }); 
+        });
+// ]]></script>
+</head>
+  <body>
+    <div class="blog-card spring-fever">
+      <header><center><h1 class="logo">Analisis Sentimen</h1></center></header>
+      <div id="ket"><p>Program ini melakukan analisis sentimen dan deteksi sarkasme terhadap data input. Program akan mendeteksi sarkasme yang terdapat dalam data, kemudian mengklasifikasikan data berdasarkan sentimen data, yaitu positif, negatif, atau netral. Data yang terdeteksi sebagai sarkasme akan diklasifikasikan ke sentimen negatif. Program ini menerima input berupa file csv</p></div>
+      <div id="loading"></div>
+      <div id="content">
+        <div class="main">
+          <br>
+          <form method="POST" action="" enctype="multipart/form-data">
+            <label class="button btnupload">
+              <input type="file" name="file">
+              <center class ="btnfont">Pilih File...</center>
+            </label>
+            <i id="file-name"></i>
+            <div id="btn">
+              <p><input class="button btnfont"type="submit" name="anything_submit" value="Analisis" id="anything_submit" onclick="loading();"></p>
+            </div>
+          </form>
+      </div>
+       <a href="/return-template/" target="blank" align="left"><button align="left" class="button downloadtemp">Download Template</button></a>
+        </div>
+    </div>
+    <div class="color-overlay"></div>
+  
+  </body>
+</html>
